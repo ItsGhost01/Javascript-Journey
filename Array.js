@@ -4,9 +4,10 @@
 
 
  // strings, arrays and objects in JavaScript are iterable objects, which means they can be looped through using loops like for, for...of, and for...in. This allows you to perform operations on each element of the string, array, or object.
+
 let marks = [85, 90, 78, 92, 88];
 
-// Accessing elements of the array
+// Accessing elements of the array using index
 console.log(marks[0]); // Output: 85
 console.log(marks[2]); // Output: 78
 console.log(marks.length); // Output: 5 // Length of the array (Property)
@@ -50,8 +51,7 @@ for (let city of cities) {
 }
 
 
-// Question: Avg of marks 
-
+// Question: Avg of marks held in an array.
 
 let marks1 = [85, 97, 44, 76, 60];
 let sum = 0;
@@ -62,8 +62,8 @@ for (let mark of marks1) {
 let avg = sum / marks1.length;
 console.log("Average marks: " + avg);
 
-
 // Qs. For a given array with prices of 5 items -> [250, 645, 300, 900, 50] All items have an offer of 10% OFF on them. Change the array to store final price after applying offer.
+
 let items = [250, 645, 300, 900, 50];
 
 // for of loop
@@ -85,3 +85,52 @@ for (let i = 0; i < items.length; i++) {
     console.log(`Final price of item = ${items[i]}`); // Print the updated price
 }       
 console.log("Final prices after applying 10% OFF: " + items);
+
+
+
+//  Array Methods in JavaScript are built-in functions that allow you to perform various operations on arrays. These methods can be used to manipulate, transform, and access the elements of an array in different ways. Some common array methods include:
+
+
+let foodItems = ["Pizza", "Burger", "Pasta", "Sushi", "Tacos"];
+
+// Using push() method to add an item to the end of the array
+foodItems.push("Salad", "Momo", "Fried Rice");
+console.log(foodItems);
+
+// Using pop() method to remove the last item from the array
+foodItems.pop();
+console.log(foodItems);
+
+
+// Using toString() method to convert the array to a string
+let foodString = foodItems.toString();
+console.log(foodString);
+
+
+
+
+// concat() method is used to merge two or more arrays. It does not change the existing arrays, but instead returns a new array that contains the elements of the merged arrays.
+
+let marvelHeroes = ["Spider-Man", "Iron Man", "Thor", "Hulk", "Captain America"];
+let dcHeroes = ["Superman", "Batman", "Wonder Woman"];
+
+// Using concat() method to merge two arrays
+let allHeroes = marvelHeroes.concat(dcHeroes);
+console.log(allHeroes);
+
+
+// slice() method is used to extract a portion of an array and return it as a new array. It does not modify the original array.
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// Using slice() method to extract a portion of the array
+let slicedNumbers = numbers.slice(2, 5);
+console.log(slicedNumbers); // Output: [3, 4, 5]
+
+// splice() method is used to add or remove elements from an array. It modifies the original array and can be used to insert, delete, or replace elements.
+let fruitss = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
+fruitss.splice(2, 0, ); // Remove the element at index 2
+console.log(fruitss); // Output: ["Apple", "Banana", "Date", "Elderberry"]
+
+
+
+
