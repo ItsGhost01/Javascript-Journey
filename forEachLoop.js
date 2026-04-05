@@ -74,7 +74,3 @@ let calcSquare = (num) => {
 
 nums.forEach(calcSquare);
 
-
-// array Methods: map, filter, reduce, forEach, find, findIndex, some, every, etc.
-
-
