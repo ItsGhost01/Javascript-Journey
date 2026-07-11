@@ -32,8 +32,8 @@ for (let i = 0; i < heroes.length; i++) {
 
 
 // example of for of loop
-
-for (let hero of heroes) {
+                   
+ for (let hero of heroes) {
     console.log(hero);
 }   
 
